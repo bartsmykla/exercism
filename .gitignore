@@ -10,3 +10,6 @@ Cargo.lock
 **/*.rs.bk
 
 .idea
+
+__pycache__
+.pytest_cache
