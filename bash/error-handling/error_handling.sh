@@ -3,7 +3,7 @@
 readonly SCRIPT_NAME=$(basename "${0}")
 
 main() {
-    if [[ $# != 1 ]]; then
+    if (( $# != 1 )); then
         echo "Usage: ${SCRIPT_NAME} <person>" >&2
         return 1
     fi
