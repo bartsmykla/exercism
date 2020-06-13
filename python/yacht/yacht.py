@@ -46,10 +46,6 @@ def found_of_a_kind_calculator(dice: Dice) -> int:
     return most_common[0][0] * 4 if most_common[0][1] >= 4 else 0
 
 
-def choice_calculator(dice: Dice) -> int:
-    return sum(dice)
-
-
 YACHT = yacht_calculator
 ONES = gen_occurences_calculator(1)
 TWOS = gen_occurences_calculator(2)
@@ -61,7 +57,7 @@ FULL_HOUSE = full_house_calculator
 FOUR_OF_A_KIND = found_of_a_kind_calculator
 LITTLE_STRAIGHT = gen_straight_calculator({1, 2, 3, 4, 5})
 BIG_STRAIGHT = gen_straight_calculator({2, 3, 4, 5, 6})
-CHOICE = choice_calculator
+CHOICE = sum
 
 
 def score(dice: Dice, score_calculator: ScoreCalculator) -> int:
