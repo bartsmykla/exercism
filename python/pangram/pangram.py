@@ -1,2 +1,2 @@
 def is_pangram(sentence):
-    return len(set(filter(str.isalpha, sentence.lower()))) == 26
+    return len({char for char in sentence.lower() if char.isalpha()}) == 26
