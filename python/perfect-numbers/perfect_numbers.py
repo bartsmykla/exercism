@@ -1,5 +1,5 @@
 from functools import reduce
-from math import sqrt, copysign
+from math import sqrt
 
 
 def _get_factors(n):
